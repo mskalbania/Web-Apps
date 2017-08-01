@@ -1,0 +1,23 @@
+body{
+    background: #ddcaa4;
+}
+
+.menu{
+    background: white;
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.menu h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.menu ol {
+    display: table;
+    margin: 0 auto;
+}
+
+.menu img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

@@ -1,12 +1,7 @@
 package com.htmlSamples;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.awt.*;
-import java.io.File;
 
 @Controller
 public class MainController {
@@ -29,6 +24,11 @@ public class MainController {
     @RequestMapping("/third-page")
     public String showThirdPage() {
         return "third-page";
+    }
+
+    @RequestMapping("/fourth-page")
+    public String showFourthPage(){
+        return "fourth-page";
     }
 
 }

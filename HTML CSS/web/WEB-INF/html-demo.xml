@@ -7,7 +7,9 @@
     <mvc:annotation-driven/>
 
     <mvc:resources mapping="/images/**" location="WEB-INF/resources/images/"/>
-    
+    <mvc:resources mapping="/css/**" location="WEB-INF/resources/css/"/>
+
+
     <!--  Step 5: Define Spring MVC view resolver  -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>
