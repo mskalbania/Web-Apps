@@ -8,16 +8,36 @@ body{
 }
 
 .menu h3 {
+    font-size: 30px;
     padding-top: 10px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .menu ol {
     display: table;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .menu img {
     margin-top: 20px;
-    margin-bottom: 10px;
+}
+
+.menu a:hover{
+    font-size: 30px;
+    color: blue;
+}
+
+.menu a:visited{
+    color: black;
+}
+
+.menu a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.menu li{
+    font-size: 25px;
 }

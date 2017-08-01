@@ -11,10 +11,10 @@
         <img src="${pageContext.request.contextPath}/images/TrollFace.jpg" height="70" width="100"/>
     </h3>
     <ol>
-        <li><h4><a href="${pageContext.request.contextPath}/first-page">HEADINGS | LISTS</a> <br></h4></li>
-        <li><h4><a href="${pageContext.request.contextPath}/second-page">IMAGES</a></h4></li>
-        <li><h4><a href="${pageContext.request.contextPath}/third-page">TABLES | FORMS</a></h4></li>
-        <li><h4><a href="${pageContext.request.contextPath}/fourth-page">CSS SELECTORS</a></h4></li>
+        <li><a href="${pageContext.request.contextPath}/first-page">HEADINGS | LISTS</a> <br></li>
+        <li><a href="${pageContext.request.contextPath}/second-page">IMAGES</a></li>
+        <li><a href="${pageContext.request.contextPath}/third-page">TABLES | FORMS</a></li>
+        <li><a href="${pageContext.request.contextPath}/fourth-page">CSS SELECTORS</a></li>
     </ol>
 </div>
 </body>
