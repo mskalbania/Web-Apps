@@ -24,7 +24,8 @@
     </h3>
     <ol>
         <li><h4><a href="${pageContext.request.contextPath}/first-page">HEADINGS | LISTS</a> <br></h4></li>
-        <li><h4><a href="${pageContext.request.contextPath}/second-page">SOMETHING</a></h4></li>
+        <li><h4><a href="${pageContext.request.contextPath}/second-page">IMAGES</a></h4></li>
+        <li><h4><a href="${pageContext.request.contextPath}/third-page">TABLES | FORMS</a></h4></li>
     </ol>
 </div>
 </body>
