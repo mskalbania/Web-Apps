@@ -1,0 +1,30 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <servlet-name>Hello world servlet</servlet-name>
+        <servlet-class>com.servlet.XmlController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hello world servlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Http method servlet</servlet-name>
+        <servlet-class>com.servlet.XmlController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Http method servlet</servlet-name>
+        <url-pattern>/method</url-pattern>
+    </servlet-mapping>
+    <!--
+     Inny sposob na mapowanie
+            <servlet>
+                <servlet-name>Words controller</servlet-name>
+                <servlet-class>com.sda.controller.WordsController</servlet-class>
+            </servlet>
+
+            <servlet-mapping>
+                <servlet-name>Words controller</servlet-name>
+                <url-pattern>/words</url-pattern>
+            </servlet-mapping>
+    -->
+</web-app>
