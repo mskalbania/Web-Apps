@@ -2,6 +2,7 @@ package com.servlet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.word.WordsResponse;
+import com.word.WordsService;
 import org.apache.commons.io.IOUtils;
 
 import javax.servlet.ServletException;
@@ -20,12 +21,8 @@ public class WordsController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ObjectMapper mapper = new ObjectMapper();
         String input = IOUtils.toString(req.getInputStream(), "UTF-8");
-        int words = input.split(" ").length;
-        int letters = Arrays
-                .stream(input.split(" "))
-                .reduce(0, (sum, word) -> sum += word.length(), (sum1, sum2) -> sum1 + sum2);
-
-        WordsResponse response = new WordsResponse(letters, words);
+        WordsService ws = new WordsService(input);
+        WordsResponse response = new WordsResponse(ws.countLetters(), ws.countWords());
         resp.getWriter().print(mapper.writeValueAsString(response));
     }
 }
